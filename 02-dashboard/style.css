@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #0b0b0f;
+  font-family: sans-serif;
+}
+
+.dash {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 640px;
+}
+.stat, canvas {
+  padding: 20px;
+  border-radius: 16px;
+  background: #16161c;
+  border: 1px solid #26262e;
+}
+.stat span { color: #888; font-size: 14px; }
+.stat b {
+  display: block;
+  margin-top: 6px;
+  font-size: 28px;
+  color: #fff;
+}
+canvas { grid-column: 1 / -1; }
